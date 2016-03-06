@@ -39,7 +39,7 @@ rankhospital <- function(state, outcome, num = "best") {
         sorted <- complete$Hospital.Name[order(as.numeric(complete[[column_name]]),complete$Hospital.Name)]
         head(sorted, 1)
         
-    } else if (num == "worse") {
+    } else if (num == "worst") {
         
         ## sort with key outcome descending, hopistal name ascending
         ## top item
